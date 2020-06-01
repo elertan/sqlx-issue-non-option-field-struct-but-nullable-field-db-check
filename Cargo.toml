@@ -8,9 +8,6 @@ edition = "2018"
 
 [dependencies]
 
-[dependencies.anyhow]
-version = "1.0.31"
-
 [dependencies.sqlx]
 version = "0.3.5"
 features = ["postgres", "chrono", "uuid"]
