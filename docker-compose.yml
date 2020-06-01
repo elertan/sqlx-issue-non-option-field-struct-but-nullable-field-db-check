@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  db:
+    image: postgres:12.2
+    command: ["postgres", "-c", "log_statement=all", "-c", "log_destination=stderr"]
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: "docker"
+      POSTGRES_DB: "app"
+      POSTGRES_PASSWORD: "docker"

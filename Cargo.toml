@@ -1,0 +1,20 @@
+[package]
+name = "sqlx-where-any-string-id-decode-err-unexpected-null"
+version = "0.1.0"
+authors = ["Dennis Kievits <denkievits@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[dependencies.anyhow]
+version = "1.0.31"
+
+[dependencies.sqlx]
+version = "0.3.5"
+features = ["postgres", "chrono", "uuid"]
+
+[dependencies.async-std]
+version = "1.6.0"
+features = ["attributes"]
